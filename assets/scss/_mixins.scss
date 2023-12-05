@@ -1,0 +1,38 @@
+@mixin style-img-full-width($url){
+    height: 90vh;
+    background-image: $url;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+@mixin style-section-row($url, $bg-position, $row-direction){
+    background-image: $url;
+    background-size: 50% 100%;
+    background-position: $bg-position;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: $row-direction;
+    align-items: center;
+    & .section-row-content{
+        margin: 10%;
+        text-align: left;
+        width: 30%;
+    }
+}
+
+@mixin style-section-on-img($url){
+    background-image: $url;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    & .section-on-img-content{
+        width: 60%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
