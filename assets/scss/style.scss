@@ -3,6 +3,9 @@
 @import 'tokkens';
 @import 'mixins';
 
+html{
+    overflow-x: hidden;
+}
 body{
     width: 100%;
     margin: auto;
